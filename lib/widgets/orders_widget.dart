@@ -54,11 +54,11 @@ class _OrdersWidgetState extends State<OrdersWidget> {
 //order detail
     return InkWell(
       onTap: () {
-        Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => OrderTrackingPage()
-            ));
+        // Navigator.push(
+        //     context,
+        //     MaterialPageRoute(
+        //       builder: (context) => OrderTrackingPage()
+        //     ));
       },
       child: Padding(
         padding: const EdgeInsets.all(8.0),
