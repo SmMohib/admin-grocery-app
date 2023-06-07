@@ -1,5 +1,4 @@
-
-import 'package:admin_groceryapp/widgets/mapLocation.dart';
+import 'package:admin_groceryapp/services/map/mapdemo.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
@@ -37,7 +36,7 @@ class _OrdersWidgetState extends State<OrdersWidget> {
   String _catValue = 'Panding';
   late final TextEditingController _titleController, _priceController;
   int _groupValue = 1;
-  
+
   get index => null;
   @override
   void initState() {
@@ -54,11 +53,8 @@ class _OrdersWidgetState extends State<OrdersWidget> {
 //order detail
     return InkWell(
       onTap: () {
-        // Navigator.push(
-        //     context,
-        //     MaterialPageRoute(
-        //       builder: (context) => OrderTrackingPage()
-        //     ));
+        Navigator.push(
+            context, MaterialPageRoute(builder: (context) => MapDemo()));
       },
       child: Padding(
         padding: const EdgeInsets.all(8.0),

@@ -54,6 +54,9 @@ dependencies:
   intl: 
   google_maps_flutter: 
   flutter_polyline_points: ^1.0.0
+  interactive_maps_marker: ^0.0.8
+  geocoding: ^2.1.0
+  syncfusion_flutter_maps: ^21.2.4
   
 
 dev_dependencies:

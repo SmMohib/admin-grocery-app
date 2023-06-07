@@ -1,3 +1,4 @@
+import 'package:admin_groceryapp/inner_screens/user_feedback.dart';
 import 'package:flutter/material.dart';
 import 'package:admin_groceryapp/inner_screens/all_orders_screen.dart';
 import 'package:admin_groceryapp/inner_screens/all_products.dart';
@@ -63,6 +64,16 @@ class _SideMenuState extends State<SideMenu> {
                       builder: (context) => const AllOrdersScreen()));
             },
             icon: IconlyBold.bag_2,
+          ),
+          DrawerListTile(
+            title: "User Feedback",
+            press: () {
+              Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => const UserFeedback()));
+            },
+            icon: Icons.feedback,
           ),
           SwitchListTile(
               title: const Text('Theme'),
